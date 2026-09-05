@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "dev (mise)",
+      "type": "shell",
+      "command": "mise exec -- pnpm run dev",
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "new" },
+      "problemMatcher": []
+    },
+    {
+      "label": "install (mise)",
+      "type": "shell",
+      "command": "mise exec -- pnpm install",
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    }
+  ]
+}
